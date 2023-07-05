@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t mohit1301/jenkins-docker-hub2 .'
+        sh 'sudo docker build -t mohit1301/jenkins-docker-hub2 .'
       }
     }
     stage('Login') {
