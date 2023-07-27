@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label:'jenkins-agent'
+  }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
